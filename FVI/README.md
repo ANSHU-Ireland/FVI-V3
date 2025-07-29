@@ -1,20 +1,30 @@
 # FVI Phase 1 - Fossil Vulnerability Index
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
+[![GitHub release](https://img.shields.io/github/release/ANSHU-Ireland/FVI-V3.svg)](https://github.com/ANSHU-Ireland/FVI-V3/releases)
+
 A comprehensive assessment system for evaluating fossil fuel vulnerability across five target countries: India (IND), China (CHN), United States (USA), Japan (JPN), and South Africa (ZAF).
 
-## Quick Start
+## 🚀 Quick Start
 
-1. **Setup the environment:**
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/ANSHU-Ireland/FVI-V3.git
+   cd FVI-V3
+   ```
+
+2. **Setup the environment:**
    ```bash
    python setup.py
    ```
 
-2. **Run the assessment:**
+3. **Run the assessment:**
    ```bash
    python main.py
    ```
 
-3. **Follow the interactive prompts** to provide your profile and get a personalized assessment.
+4. **Follow the interactive prompts** to provide your profile and get a personalized assessment.
 
 ## Project Structure
 
@@ -110,6 +120,41 @@ Each run generates:
 ## Phase 1 Scope
 
 This implementation covers the MVP for 5 countries with 4 core pillars. Economic, Scarcity, and Infrastructure pillars are planned for Phase 2.
+
+## 📊 Sample Output
+
+```
+FVI Phase 1 - Fossil Vulnerability Index Assessment
+=======================================================
+Country: IND
+Reference Year: 2022
+Composite Score: 72.3
+Classification: Critical Transition
+
+Pillar Scores:
+  Emissions: 78.5 (weight: 0.28)
+  Necessity: 85.2 (weight: 0.32)  
+  Ecological: 65.1 (weight: 0.22)
+  ArtificialSupport: 68.9 (weight: 0.18)
+```
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## 📄 License
+
+This project is licensed under the MIT License.
+
+## 📞 Support
+
+- **Issues**: [GitHub Issues](https://github.com/ANSHU-Ireland/FVI-V3/issues)
+- **Documentation**: See `docs/` folder for detailed specifications
+- **Release Notes**: [RELEASE_NOTES.md](RELEASE_NOTES.md)
 
 ---
 
