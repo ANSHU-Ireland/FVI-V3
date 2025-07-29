@@ -1,0 +1,32 @@
+# FVI Phase 1 Configuration
+reference_year_policy: latest_year_present_in_>=80_percent
+
+countries: [IND, CHN, USA, JPN, ZAF]
+
+winsor_limits_pct: [1, 99]
+
+normalize_strategy_per_metric:
+  emissions_abs: log_minmax
+  default: minmax
+
+pillar_thresholds:
+  sustainable_max: 35
+  transition_max: 65
+
+guardrails:
+  as_emissions_block:
+    as_min: 70
+    emissions_min: 60
+  eco_decom_bias:
+    eco_min: 60
+    nec_max: 30
+
+weight_engine:
+  alpha_by_depth:
+    quick: 0.7
+    standard: 1.0
+    deep: 1.5
+  floor: 0.05
+
+gemini_model: "gemini-2.0-flash"
+gemini_api_key: "AIzaSyCbXYrPJz7gbgzsiU2sAmyeHl0EEP-zo4o"

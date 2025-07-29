@@ -1,0 +1,78 @@
+# FVI Project .gitignore
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# Data files (excluding templates)
+data/raw/*
+data/clean/*
+!data/raw/.gitkeep
+!data/clean/.gitkeep
+
+# Artifacts (generated outputs)
+artifacts/scores/*
+artifacts/facts/*
+artifacts/logs/*
+!artifacts/scores/.gitkeep
+!artifacts/facts/.gitkeep
+!artifacts/logs/.gitkeep
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+
+# Sensitive configuration (API keys should be in environment variables)
+# config/config.yaml  # Commented out - will include but users should update API key
+
+# Documentation builds
+docs/_build/
+
+# Test coverage
+htmlcov/
+.coverage
+.coverage.*
+coverage.xml
+*.cover
+
+# Jupyter Notebooks checkpoints
+.ipynb_checkpoints
+
+# Parent directory items that aren't part of FVI
+../1.webp
+../2.webp
+../*.pdf
+../*.docx
+../*.xlsx
+../*.ods
+../*.jpg
+../*.lnk
+../*.zip
+../*.txt
+../*/
